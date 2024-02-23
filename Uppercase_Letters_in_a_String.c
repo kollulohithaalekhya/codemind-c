@@ -2,17 +2,16 @@
 #include<string.h>
 int main()
 {
-    char s1[100];
-    scanf("%[^
-]s",s1);
-    int len=strlen(s1);
+    char s[100];
     int c=0;
-    for(int i=0;i<len;i++)
+  scanf("%[^
+]s",s);
+    for(int i=0;s[i]!=NULL;i++)
     {
-        if(s1[i]<65 || s1[i]>91)
+        if(s[i]>=65 && s[i]<=90)
         {
             c+=1;
         }
     }
-    printf("%d",len-c);
+ printf("%d",c);
 }
